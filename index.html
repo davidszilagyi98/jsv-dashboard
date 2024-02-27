@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA with Firebase</title>
+</head>
+<body>
+  <h1>Welcome to SPA with Firebase</h1>
+  
+  <div id="login">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="adminView" style="display: none;">
+    <h2>Admin View</h2>
+    <ul id="adminData"></ul>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div id="userView" style="display: none;">
+    <h2>User View</h2>
+    <p id="userData"></p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <!-- Include Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-database-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
