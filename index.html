@@ -22,9 +22,17 @@
 
   <div id="userView" style="display: none;">
     <h2>User View</h2>
+    <div>
+        <h3>Select Options</h3>
+        <input type="checkbox" id="option1"> Option 1
+        <input type="checkbox" id="option2"> Option 2
+        <!-- Add more checkboxes as needed -->
+        <button onclick="saveOptions()">Save Options</button>
+    </div>
     <p id="userData"></p>
     <button onclick="logout()">Logout</button>
-  </div>
+</div>
+
 
   <!-- Include Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app-compat.js"></script>
